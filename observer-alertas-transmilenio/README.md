@@ -16,7 +16,7 @@ Los cambios están marcados con comentarios `// Paso N`.
 ## Compilar y ejecutar
 
 ```
-cd 00-inicio
+cd src
 javac *.java
 java Main
 ```
