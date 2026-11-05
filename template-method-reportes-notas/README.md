@@ -2,14 +2,9 @@
 
 Programación I · Patrones de comportamiento · Universidad Libre
 
-## Carpetas
+## Código
 
-| Carpeta | Qué contiene |
-|---|---|
-| `00-inicio` | `ReporteTexto`, `ReporteCSV` y `ReporteHTML` repiten el mismo algoritmo, cada uno a su manera. |
-| `01-template-method` | La clase abstracta `Reporte` fija el algoritmo en `generar()`; cada subclase solo da formato. |
-
-Los cambios están marcados con comentarios `// Paso N`.
+El código del proyecto está en la carpeta `src`.
 
 ## Compilar y ejecutar
 
@@ -19,13 +14,13 @@ javac *.java
 java Main
 ```
 
-## Síntoma que se observa en `00-inicio`
+## Síntoma
 
 Carlos Perez (nota 3.0) aparece **APROBADO** en el texto y en el HTML, pero **REPROBADO** en el CSV: la regla de aprobación se copió tres veces y en una se escribió `>` en lugar de `>=`.
 
-## Reto (`02-reto`)
+## Reto
 
-Copie `01-template-method` como `02-reto` y agregue `ReporteMarkdown`, que produce una tabla en Markdown:
+Agregue `ReporteMarkdown`, que produce una tabla en Markdown:
 
 ```
 | Nombre | Nota | Estado |
