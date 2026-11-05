@@ -8,22 +8,10 @@ public class Main {
         carrito.agregar(new Producto("Morral", 95000, 1));
 
         System.out.println("Subtotal:     " + pesos(carrito.getSubtotal()));
-        
-        carrito.setEstrategia(new BlackFriday());
-        System.out.println("Black Friday: " + pesos(carrito.calcularTotal()));
-
-        
-        carrito.setEstrategia(new DescuentoEstudiante());
-        System.out.println("Estudiante:   " + pesos(carrito.calcularTotal()));
-
-        
-        carrito.setEstrategia(new BonoFijo(20000, 5000));
-        System.out.println("Bono 20 mil:  " + pesos(carrito.calcularTotal()));
-
-        
-        // carrito.setEstrategia(new );
-        // System.out.println("BLACKFRIDAY:  " + pesos(carrito.calcularTotal()));
-
+        System.out.println("Black Friday: " + pesos(carrito.calcularTotal("BLACK_FRIDAY")));
+        System.out.println("Estudiante:   " + pesos(carrito.calcularTotal("ESTUDIANTE")));
+        System.out.println("Bono 20 mil:  " + pesos(carrito.calcularTotal("BONO_20MIL")));
+        System.out.println("BLACKFRIDAY:  " + pesos(carrito.calcularTotal("BLACKFRIDAY")));
     }
 
     static String pesos(double valor) {
